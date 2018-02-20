@@ -1,0 +1,75 @@
+/*Custom Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Indie+Flower|Open+Sans|Schoolbell');
+font-family: 'Schoolbell', cursive;
+font-family: 'Crafty Girls', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Open Sans', sans-serif;
+
+/*Defaults*/
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #a3a3a3;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	background-image: url("clouds.png");
+    background-color: #ffff80;
+    background-repeat: repeat-x;
+	background-position: center;
+	background-attachment:scroll;
+}
+
+b {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+h1 {
+    font-family: 'Schoolbell', cursive;
+	font-size: 46px;
+    color: #ff0088
+}
+
+h2 {
+    font-family: 'Crafty Girls', cursive;
+	font-size: 36px;
+    color: aqua
+}
+
+h3 {
+    font-family: 'Indie Flower', cursive;
+	font-size: 28px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+}
+header {
+    color: #ff0088
+	padding: 15px;
+	border-bottom: 40px double #ff0088;
+	position:relative;
+}
+img {
+    max-width: 350px;
+    max-height: 350px;
+}
