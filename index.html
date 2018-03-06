@@ -2,12 +2,59 @@
       <html>
     <head>
         <title>Romi's World</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Indie+Flower|Schoolbell" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            #aboutText{
+                text-align: left;
+                float: left;
+                position: relative;
+                clear: both;
+                width: 60%;
+                padding-left: 90px;
+            }
+            #aboutTitle{
+                text-align: left;
+            }
+            #aboutPic{
+                float: center;
+                padding-right: 10px;
+                position: relative;
+                clear: both;
+            }
+            #read{
+                text-align: left;
+                clear: both;
+            }
+            #readPic{
+                float: left;
+                clear: both;
+            }
+            #dance{
+                text-align: center;
+                clear: both;
+            }
+            #danceVid{
+                float: left;
+                clear: both;
+            }
+            #coding{
+                text-align: right;
+                clear: both;
+            }
+            #codingPic{
+                float: right;
+                clear: both;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h3>La-la La-la</h3>
-                <h1>Romi's World</h1>
+            <h3 id="prelogo">La-la La-la . . .</h3>
+                <h1 id="logo">Romi's World</h1>
         <nav>
             <ul>
             <a href="index.html">HOME</a>
@@ -16,15 +63,16 @@
             </ul>
         </nav>
         </header>
-        <div>
-        <img src="assets/img/IMG_1382.JPG">
-        </div>
-        <div>
-        <h2>ABOUT ME</h2>
-        <p>I'm just a girl, standing in front of you, asking you to love her.</p>
-        <p>Just kidding! But in all seriousness, you are about to enter another dimension, a dimension not only of sight and sound but of mind. A journey into a wondrous land of imagination. Next stop, this is RoMi's World!</p>
-        </div>
-        <div>
+        <div id="cloudsBack">
+        <div id="aboutcontainer">
+        <div id="aboutText">
+                <h2 id="aboutTitle">ABOUT ME</h2>
+            <p>You are about to enter another dimension, a dimension not only of sight and sound but of mind. A journey into a wondrous land of imagination. Next stop, this is RoMi's World!</p>
+            </div>
+            <img src="assets/img/IMG_1382.JPG" id="aboutPic">
+        <br style="clear: both">
+        <br>
+        <div class="toggle">
         <nav>
             <ul>
             <a href="#skills">SKILLS</a>
@@ -35,78 +83,68 @@
             </ul>
         </nav>
         </div>
-        <section><h2 id="skills">SKILLS</h2>
-            <div>
+        <br>
+        <section id="skills"><h2>SKILLS</h2>
+            <div id="read">
             <h3>Reading</h3>
             <p>Proficient in picture books, individual letters, and animal sounds.</p>
+                <img src="assets/img/IMG_0289.JPG" id="readPic">
             </div>
-            <div>
-            <img src="assets/img/IMG_0289.JPG">
-            </div>
-            <div>
+            <br>
+            <div id="dance">
+                <div id="righttextdiv">
             <h3>Dancing</h3>
-            <p>Natural-born dancer with expertise in Latin Mambo.</p>
-            </div>
-            <div>
-            <video autoplay controls>
-            <source src="assets/img/dancing%20video.mp4">
+            <p >Natural-born dancer with expertise in Latin Mambo.</p>
+            <video autoplay controls controlsList="nodownload" height="450">
+            <source src="assets/img/dancing%20video.mp4" id="danceVid" >
             </video>
             </div>
-            <div>
+            <br>
+            <div id="coding">
             <h3>Coding</h3>
-            <p>Beginner skills in HTML, HTML5, and number buttons.</p>
+            <p>Beginner skills in HTML, HTML5, and number buttons.</p><img src="assets/img/IMG_3969.JPG" id="codingPic">
             </div>
-            <img src="assets/img/IMG_3969.JPG">
         </section>
-        <section><h2 id="favs">FAV'S</h2>
+            <br style="clear: both">
+        <section id="favs"><h2>FAV'S</h2>
         <div>
             <div>
-            <img src="assets/img/Elmo.jpg">
-            </div>
-            <div>
-            <img src="assets/img/Minnie.jpg">
-            </div>
-            <div>
-            <img src="assets/img/Rocky.jpg">
-            </div>
-            <div>
             <h3>People</h3>
+            </div>
+            <div id="peeps">
+            <img src="assets/img/Elmo.jpg">
+            <img src="assets/img/Minnie.jpg">
+            <img src="assets/img/Rocky.jpg">
             </div>
         </div>
         <div>
             <div>
             <h3>Foods</h3>
             </div>
-            <div>
+            <div id="foods">
             <img src="assets/img/bananas.jpg">
-            </div>
-            <div>
             <img src="assets/img/pasta.jpeg">
-            </div>
-            <div>
             <img src="assets/img/patrick-fore-389431.jpg">
             </div>
         </div>
         <div>
             <div>
-            <img src="assets/img/IMG_3177.JPG">
-            </div>
-            <div>
-            <img src="assets/img/IMG_3118.JPG">
-            </div>
-            <div>
-            <img src="assets/img/IMG_3089.JPG">
-            </div>
-            <div>
             <h3>Things To Do</h3>
+            </div>
+            <div id="things">
+            <img src="assets/img/IMG_3177.JPG">
+            <img src="assets/img/IMG_3118.JPG">
+            <img src="assets/img/IMG_3089.JPG">
             </div>
         </div>
         </section> 
-        <section><h2 id="books">PUBLISHED BOOKS</h2>
-        <div>
-            <p>book descriptions here
+        <section id="books"><h2>PUBLISHED BOOKS</h2>
+            <br>
+        <div id="bookText">
+            <p>I'm not two years old yet, however I have published (well, self-published) two books. My mom wrote them, but I'm the brains (and narration) behind the books. Stay tuned to Amazon for release dates.
             </p>
         </div>
+            <br>
         <div>
             <div>
             <img src="assets/img/Screen%20Shot%202018-02-12%20at%2010.13.56%20PM.png">
@@ -114,7 +152,7 @@
             </div>
         </div>
         </section>
-        <section><h2 id="videos">VIDEOS I CAN'T LIVE WITHOUT</h2>
+        <section id="videos"><h2>VIDEOS I CAN'T LIVE WITHOUT</h2>
         <div>
             <iframe width="350" height="250" src="https://www.youtube-nocookie.com/embed/uTK_7MOFV4s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <iframe width="350" height="250" src="https://www.youtube.com/embed/51sqEYDljUA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -126,12 +164,13 @@
             <iframe width="350" height="250" src="https://www.youtube-nocookie.com/embed/lzJV7k-LiC4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </section>
-        <section><h2 id="map">PLACES I'VE BEEN TO</h2>
+        <section id="map"><h2>PLACES I'VE BEEN TO</h2>
             <div>
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Eo50X3Ox_9UPUiT_bB9No-uk30tp9guz" width="640" height="480"></iframe>
             </div>
         </section>
-        <div>
+        </div>
+        <div class="toggle">
         <nav>
             <ul>
             <a href="#skills">SKILLS</a>
@@ -142,5 +181,16 @@
             </ul>
         </nav>
         </div>
+        <footer>
+            <nav>
+                <ul>
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+                </ul>
+            </nav>
+        </footer>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     </body>
 </html>

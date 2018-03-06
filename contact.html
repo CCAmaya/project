@@ -2,11 +2,40 @@
       <html>
     <head>
         <title>Contact RoMi</title>
+        <link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Indie+Flower|Schoolbell" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            #container{
+                padding: 50px;
+            }
+            #title{
+                text-align: center;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+            #form{
+                text-align: center;
+            }
+            label{
+                font-size: 24px;
+                color: #fff;
+                text-shadow: 0px 0px 20px #000;
+            }
+            input, textarea{
+                padding: 5px;
+                border-radius: 10px;
+                border: 1px solid #000;
+            }
+            textarea{
+                margin-top: 10px;
+                padding: 25px;
+                width: 50%;
+            }
+        </style>
     </head>
     <body>
         <header>
-                <h1>Romi's World</h1>
+                <h1 id="logo">Where In The World Is RoMi Sandiego?</h1>
         <nav>
             <ul>
             <a href="index.html">HOME</a>
@@ -15,20 +44,23 @@
             </ul>
         </nav>
         </header>
+        <div id="container">
         <div>
-            <h2>Contact Me For Bookings</h2>
+            <h2 id="title">Contact Me For Bookings</h2>
         </div>
-        <div>
+        <div id="form">
         <form>
             <label>First Name:
                 <input type="text" name="firstName" required>
             </label>
             <label>Last Name:
                 <input type="text" name="lastName" required>
-            </label> <br>
+            </label> 
+            <br>
             <label>Email:
                 <input type="email" name="email" required>
-            </label><br>
+            </label>
+            <br>
             <label>Favorite Color:
                 <select name="colors">
                     <option value="blue">Blue</option>
@@ -36,7 +68,8 @@
                     <option value="green">Green</option>
                     <option value="other">Other Colors I Haven't Learned Yet</option>
                 </select>
-            </label><br>
+            </label>
+            <br>
             <label>Favorite Monster:
                 <input type="radio" name="monster" value="elmo">Elmo
                 <input type="radio" name="monster" value="cookie">Cookie Monster
@@ -44,11 +77,24 @@
                 <input type="radio" name="monster" value="grover">Super Grover
                 <input type="radio" name="monster" value="count">The Count
                 <input type="radio" name="monster" value="snuff">Mr. Snuffleupagus
-            </label><br>
+            </label>
+            <br>
             <label>If you could buy me a donut of any flavor, what flavor would that be?<br>
                 <textarea name="message"></textarea>
-            </label><br>
-            <input type="submit" value="Submit">
+            </label>
+            <br>
+            <input type="submit" name="submit" value="My People Will Call Your People">
             </form>
         </div>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+                </ul>
+            </nav>
+        </footer>
           </body>
+          </html>
